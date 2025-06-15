@@ -1,0 +1,9 @@
+User-agent: *
+
+Allow: /*
+
+# Wait 1 second between successive requests. See ONBOARD-2698 for details.
+Crawl-delay: 1
+
+Sitemap: https://playtext.ca/wp-sitemap.xml
+Sitemap: https://studiosoha.ca/sitemap.xml

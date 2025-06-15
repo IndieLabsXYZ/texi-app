@@ -1,0 +1,26 @@
+{
+  "name": "Texi",
+  "short_name": "Texi",
+  "description": "Texi is a platform designed for the next billion users",
+  "start_url": "/?utm_source=homescreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "id": "/",
+  "theme_color": "#ffffff",
+  "background_color": "#fdf2a3",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
