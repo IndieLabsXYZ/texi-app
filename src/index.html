@@ -420,5 +420,6 @@ accessibility across different systems and time periods.
 		<script src="js/lenis.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script type="module" src="js/index.js"></script>
+		<script>"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js",{scope:"/"}).then(e=>{setInterval(()=>{e.update()},36e5)})})</script>
 	</body>
 </html>

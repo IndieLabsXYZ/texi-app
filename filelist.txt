@@ -1,14 +1,9 @@
-const version = "06152025a";
-const cacheName = `texi-${version}`;
-self.addEventListener('install', e => {
-  e.waitUntil(
-    caches.open(cacheName).then(cache => {
-      return cache.addAll([
-        '/apple-touch-icon.png',
-        '/favicon-96x96.png',
-        '/favicon.svg',
-        '/index.html',
-        '/manifest.json',
+
+'/apple-touch-icon.png',
+'/favicon-96x96.png',
+'/favicon.svg',
+'/index.html',
+'/manifest.json',
 '/web-app-manifest-192x192.png',
 '/web-app-manifest-512x512.png',
 '/css/base.css',
@@ -63,20 +58,4 @@ self.addEventListener('install', e => {
 '/js/lenis.min.js',
 '/js/ScrollTrigger.min.js',
 '/js/utils.js'
-      ])
-          .then(() => self.skipWaiting());
-    })
-  );
-});
-self.addEventListener('activate', event => {
-  event.waitUntil(self.clients.claim());
-});
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.open(cacheName)
-      .then(cache => cache.match(event.request, {ignoreSearch: true}))
-      .then(response => {
-      return response || fetch(event.request);
-    })
-  );
-});
+
