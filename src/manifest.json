@@ -8,6 +8,7 @@
   "id": "/",
   "theme_color": "#ffffff",
   "background_color": "#fdf2a3",
+  "display_override": ["window-control-overlay", "standalone"],
   "display": "standalone",
   "icons": [
     {
@@ -21,6 +22,27 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "related_applications": [
+  {
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=app.texi.texi",
+    "id": "app.texi.texi"
+  }
+],
+  "screenshots": [
+    {
+      "src": "/img/T2.webp",
+      "type": "image/webp",
+      "sizes": "814x1440",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/img/T4.webp",
+      "type": "image/webp",
+      "sizes": "814x1440",
+      "form_factor": "wide"
     }
   ]
 }

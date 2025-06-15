@@ -1,4 +1,4 @@
-const version = "06152025a";
+const version = "06152025b";
 const cacheName = `texi-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
