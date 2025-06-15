@@ -6,18 +6,18 @@
 		<title>Texi | Empowering communities to bridge digital divides.</title>
 		<meta name="description" content="With Texi, you can easily access global archives, create collections, share knowledge freely, and monetize." />
 		<meta name="author" content="PlayText Software Inc." />
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Texi" />
-<link rel="manifest" href="/manifest.json" />
+<link rel="manifest" href="./manifest.json" />
 <meta name="theme-color" content="#ffffff">
 <meta name="mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="https://use.typekit.net/cch1nog.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script type="module" src="js/head.js"></script>
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
@@ -103,8 +103,19 @@
 						"addressCountry": "Canada"
 					  },
 					  "image": "https://studiosoha.ca/wp-content/uploads/2025/06/soha-profle-edited-1024x1024.jpg",
-					  "sameAs": "https://www.instagram.com/diansoha"
-					}
+					  "sameAs": "https://www.instagram.com/diansoha",
+					            "https://github.com/diansoha"
+					},
+					"knowsLanguage": [
+					"English",
+					"French",
+					"Persian"
+				  ],
+				  "knowsAbout": [
+					"Fine Art Photography",
+					"Clinical Laboratory Sciences",
+					"UX & Design"
+				  ],
 				  ],
 				  "publisher": {
 					"@id": "https://playtext.ca"
@@ -420,6 +431,6 @@ accessibility across different systems and time periods.
 		<script src="js/lenis.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script type="module" src="js/index.js"></script>
-		<script>"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js",{scope:"/"}).then(e=>{setInterval(()=>{e.update()},36e5)})})</script>
+		<script type="module" >navigator.serviceWorker.register(new URL("sw.js", import.meta.url));</script>
 	</body>
 </html>
